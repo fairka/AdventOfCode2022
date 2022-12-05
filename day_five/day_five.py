@@ -42,10 +42,6 @@ def partone():
     print(topStack)
         
 
-                    
-                     
-   
-
 def parttwo():
     stacks = []
     pairTxt = open('input.txt', 'r')
