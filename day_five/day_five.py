@@ -1,5 +1,5 @@
 def main():
-    #partone()
+    partone()
     parttwo()
 
 
@@ -32,7 +32,14 @@ def partone():
         for j in range(int(temp[1])):
             box = stacks[int(temp[3])-1].pop()
             stacks[int(temp[5])-1].append(box)
-    print(stacks)
+    
+    topStack = ""
+
+    for list in stacks:
+        if list:
+
+            topStack += list[-1]
+    print(topStack)
         
 
                     
@@ -66,7 +73,15 @@ def parttwo():
         for j in range(int(temp[1])-1, -1, -1):
             box = stacks[int(temp[3])-1].pop(len(stacks[int(temp[3])-1])-j-1)
             stacks[int(temp[5])-1].append(box)
-    print(stacks)
+
+    
+    topStack = ""
+
+    for list in stacks:
+        if list:
+
+            topStack += list[-1]
+    print(topStack)
 
 if __name__ == '__main__':
     main()
